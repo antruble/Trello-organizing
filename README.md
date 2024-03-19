@@ -21,3 +21,13 @@ A kód működése során összehasonlítja az újonnan lekért adatokat a sajá
 - Ha a vizsgált kártya nem létezik az adatbázisban, létrehozza azt.
 - Ha a kártya létezik az adatbázisban, de különbözik, frissíti az újonnan lekért adatokkal.
 - Ha egy kártya prioritása megváltozik, és a kártyát korábban is elfogadták, és most is elfogadják, frissíti az adatbázisban a legutóbbi módosított hónapban.
+
+## Tesztesetek
+
+### Elfogadott task>
+- [x] Súlyozás frissítése (kisebből nagyobb, nagyobból kisebb)
+- [x] Speciális label változások ellenőrzése (lekerül az összes label a taskról, új ismeretlen label kerül rá)
+- [x] Task újranyitása (új súlyozással/súlyozás nélkül)
+### Nem elfogadott task>
+- [x] Súlyozás frissítése (kisebből nagyobb, nagyobból kisebb)
+- [x] Task elfogadása (új súlyozással/súlyozás nélkül)
