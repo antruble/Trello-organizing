@@ -1,17 +1,17 @@
 # Trello-organizing
-# Trello Feladat Számláló
-# Ez a kód arra szolgál, hogy megszámolja a Trello-ban lévő már elvégzett és elfogadott feladatokat, a hozzájuk rendelt vállalatok alapján és azok prioritása szerint.
+
+Ez a kód arra szolgál, hogy megszámolja a Trello-ban lévő már elvégzett és elfogadott feladatokat, a hozzájuk rendelt cégek alapján és feladat fontossági súlyozása alapján.
 
 Használat
-A kód használata előtt ki kell tölteni az appsettings.json fájlt a felhasználói titokkal, az API kulccsal és a táblázat azonosítójával.
+A kód használata előtt ki kell tölteni az appsettings.json fájlt az adatbázis connection strinjével, a trello user secrettel, az API kulccsal és a táblázat azonosítójával.
 
 json
-Copy code
 {
-  "TrelloSettings": {
-    "UserSecret": "a_felhasznaloi_titokod",
-    "ApiKey": "a_api_kulcsod",
-    "BoardId": "a_tablazat_azonositoja"
+  "settings": {
+    "connectionString": "CONNECTION_STRING_HELYE",
+    "userSecret": "USER_SECRET_HELYE",
+    "apiKey": "API_KEY_HELYE",
+    "boardId": "TRELLO_BOARD_ID_HELYE"
   }
 }
 A kód működése során összehasonlítja az újonnan lekért adatokat a saját adatbázisával. Három lehetőség van:
