@@ -3,7 +3,7 @@
 A kód feladata, hogy megszámolja a Trello-ban lévő már elvégzett és elfogadott feladatokat, a megfelelő cég és feladat fontossági súlyozása alapján.
 
 ## Használat
-A kód használata előtt ki kell tölteni az appsettings.json fájlt az adatbázis connection strinjével, a trello user secrettel, az API kulccsal és a táblázat azonosítójával.
+A kód használata előtt ki kell tölteni az appsettings.json fájlt az adatbázis connection stringjével, a trello user secrettel, az API kulccsal és a táblázat azonosítójával.
 
 ```json
 {
